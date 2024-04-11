@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 
 // ログイン要求のリクエスト
 app.get("/login", (req, res) => {
-  const redirect = createRedirectUrl(state);
+  const redirect = createRedirectUrl();
   res.redirect(redirect);
 });
 
